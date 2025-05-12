@@ -1,0 +1,143 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: white;
+            padding: 25px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 400px;
+			height: 400px
+            display: flex;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            flex: 1;
+        }
+
+        .user-profile {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #26A6A6;
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+			
+			li a {
+				display: block;
+				color: #000;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+
+			li a.active {
+				background-color: #197676;
+				color: white;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #219191;
+				color: white;
+			}
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .info-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chart-box {
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .legend {
+            margin-bottom: 10px;
+        }
+
+        .legend span {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .circle {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #7CF2F3 0% 50%,
+                #43BCD1 50% 80%,
+                #2772A5 80% 100%
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-inner {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+		
+		
